@@ -91,9 +91,6 @@ body::-webkit-scrollbar-thumb {
     scroll-snap-align: center;
 }
 /* ==========================================*/
-
-
-
 /*================== nav =======================*/
 .nav{
     display: flex;
