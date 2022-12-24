@@ -157,7 +157,7 @@ body::-webkit-scrollbar-thumb {
     width: 40rem;
     padding: 2rem;
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: slidein-left;
 }
 
 .presentation .card .header{
@@ -651,10 +651,10 @@ body::-webkit-scrollbar-thumb {
 
 
   
- @keyframes slidein {
+ @keyframes slidein-left {
     from{
         opacity: 0;
-        transform: translateX(-6.25rem)
+        transform: translateX(-8rem)
     }
     to {
         opacity: 1;
@@ -700,6 +700,10 @@ body::-webkit-scrollbar-thumb {
 
     .values{
         padding: 2rem;
+    }
+
+    .areas-expertise .area{
+        min-height: 100vh;
     }
 
     .areas-expertise .acting .row:first-child{
