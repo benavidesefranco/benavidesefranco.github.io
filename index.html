@@ -10,21 +10,27 @@
       href="/assets/icon/logo.ico"
       type="image/x-icon"
     />
-    <title>Benavides e Franco</title>
-    <meta name="description" content="Site da Advocacia Benavides e Franco." />
+    <title>Benavides e Franco Advocacia</title>
+    <meta name="description" content="Site da Benavides e Franco Advocacia." />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <nav class="nav">
+    <nav class="nav scroll-snap">
       <div class="box-logo">
         <img class="logo" src="assets/logo.png" alt="logo Benavides e Franco" />
       </div>
       <div class="items">
-        <a class="item" href="#about">Sobre nós</a>
-        <a class="item" href="#area">Áreas de atuação</a>
-        <a class="item" href="#team">Equipe</a>
-        <a class="item" href="#contact">Filiais e contatos</a>
+        <a class="item" href="#about" title="Navega para Sobre nós">
+          Sobre nós
+        </a>
+        <a class="item" href="#area" title="Navega para Áreas de atuação">
+          Áreas de atuação
+        </a>
+        <a class="item" href="#team" title="Navega para Equipe">Equipe</a>
+        <a class="item" href="#contact" title="Navega para Filiais e contatos">
+          Filiais e contatos
+        </a>
       </div>
     </nav>
 
@@ -37,14 +43,17 @@
       </div>
 
       <video id="background-video" autoplay loop muted>
-        <source src="./assets/video/video.mp4" type="video/mp4" />
+        <source
+          src="./assets/video/video.mp4"
+          type="video/mp4"
+          title="vídeo de background"
+        />
       </video>
 
-      <section class="presentation scroll-snap">
-        <div class="card">
+      <section class="presentation">
+        <div class="card" title="Card de apresentação Benavides e Franco">
           <div class="header">
-            <span>BENAVIDES & FRANCO</span>
-            <span>ADVOCACIA</span>
+            <h1 class="text-medium">BENAVIDES & FRANCO ADVOCACIA</h1>
           </div>
           <h1 class="title text-title">EXCELÊNCIA</h1>
           <h2 class="subtitle text-subtitle">EM DIREITO</h2>
@@ -56,9 +65,9 @@
       </section>
 
       <section class="about scroll-snap">
-        <div class="container" id="about">
+        <div class="container" id="about" title="Sobre a Advocacia">
           <span class="separator"></span>
-          <h3 class="title text-xxlarge">QUEM SOMOS</h3>
+          <h1 class="title text-xxlarge">QUEM SOMOS</h1>
           <div>
             <p class="paragraphy text-large">
               Nascemos de um grande, saudável e ambicioso sonho: ser o maior
@@ -87,11 +96,11 @@
       </section>
 
       <section class="management">
-        <div class="card scroll-snap">
+        <div class="card scroll-snap" title="Card de Missão e Visão">
           <div class="content">
             <div class="header">
               <i class="icon fa-solid fa-bullseye fa-2x"></i>
-              <h4 class="title">MISSÃO</h4>
+              <h1 class="title">MISSÃO</h1>
             </div>
             <p class="text">
               Entender o negócio e os objetivos de nossos clientes para prestar
@@ -104,7 +113,7 @@
           <div class="content">
             <div class="header">
               <i class="icon fa-regular fa-eye fa-2x"></i>
-              <h4 class="title">VISÃO</h4>
+              <h1 class="title">VISÃO</h1>
             </div>
             <p class="text">
               Ser reconhecido pelo mercado como referência na prestação de
@@ -116,7 +125,7 @@
 
       <section class="values">
         <div class="header">
-          <h4 class="title text-large">VALORES</h4>
+          <h1 class="title text-large">VALORES</h1>
         </div>
         <div class="separator">
           <i class="fa-solid fa-chevron-down"></i>
@@ -127,7 +136,7 @@
             alt="arte pilar"
             class="image-pilar"
           />
-          <div class="overflow">
+          <div class="overflow" title="Valores">
             <div class="text">
               <h1 class="value text-subtitle">ÉTICA</h1>
             </div>
@@ -160,9 +169,9 @@
       </section>
 
       <section class="areas-expertise">
-        <div class="area" id="area">
+        <div class="area" id="area" title="Apresentação das Áreas de atuação">
           <div class="title">
-            <h3 class="text-xxlarge">ÁREAS DE ATUAÇÃO</h3>
+            <h1 class="text-xxlarge">ÁREAS DE ATUAÇÃO</h1>
           </div>
           <div class="separator"></div>
           <div class="text">
@@ -174,10 +183,11 @@
             </p>
           </div>
         </div>
-        <div class="acting scroll-snap">
+        <div class="acting scroll-snap" title="Áreas de atuação">
           <div class="row">
             <div
               class="card"
+              title="Card área administrativo"
               style="background-image: url(./assets/background-cards/adm.jpg)"
             >
               <div class="bg">
@@ -186,6 +196,7 @@
             </div>
             <div
               class="card"
+              title="Card área agronegócio"
               style="
                 background-image: url(./assets/background-cards/agricultura.jpg);
               "
@@ -196,6 +207,7 @@
             </div>
             <div
               class="card"
+              title="Card área Educacional"
               style="background-image: url(./assets/background-cards/edu.jpg)"
             >
               <div class="bg">
@@ -204,6 +216,7 @@
             </div>
             <div
               class="card"
+              title="Card área Empresarial"
               style="
                 background-image: url(./assets/background-cards/empresarial.jpg);
               "
@@ -216,6 +229,7 @@
           <div class="row">
             <div
               class="card"
+              title="Card área Penal"
               style="background-image: url(./assets/background-cards/penal.jpg)"
             >
               <div class="bg">
@@ -224,6 +238,7 @@
             </div>
             <div
               class="card"
+              title="Card área trabalhista"
               style="
                 background-image: url(./assets/background-cards/trabalhista.jpg);
               "
@@ -234,6 +249,7 @@
             </div>
             <div
               class="card"
+              title="Card área societário"
               style="background-image: url(./assets/background-cards/socio.jpg)"
             >
               <div class="bg">
@@ -242,6 +258,7 @@
             </div>
             <div
               class="card"
+              title="Card área LGPD"
               style="background-image: url(./assets/background-cards/lgpd.jpg)"
             >
               <div class="bg">
@@ -252,6 +269,7 @@
           <div class="row">
             <div
               class="card"
+              title="Card área tributário"
               style="
                 background-image: url(./assets/background-cards/tributacao.jpg);
               "
@@ -262,6 +280,7 @@
             </div>
             <div
               class="card"
+              title="Card área terceiro setor"
               style="
                 background-image: url(./assets/background-cards/terceiro.jpg);
               "
@@ -272,6 +291,7 @@
             </div>
             <div
               class="card"
+              title="Card área relações governamentais"
               style="
                 background-image: url(./assets/background-cards/governo.jpg);
               "
@@ -282,6 +302,7 @@
             </div>
             <div
               class="card"
+              title="Card área Internacional e arbitragem"
               style="
                 background-image: url(./assets/background-cards/internacional.jpg);
               "
@@ -295,8 +316,8 @@
       </section>
 
       <section class="team scroll-snap" id="team">
-        <div class="description">
-          <h3 class="title text-xxlarge">O time Benavides &amp; Franco</h3>
+        <div class="description" title="Sobre o time Benavides e Franco">
+          <h1 class="title text-xxlarge">O time Benavides &amp; Franco</h1>
           <p class="paragraphy text-large">
             A equipe de advogados do escritório passa por uma rigorosa seleção,
             a fim de termos profissionais que estejam de acordo com nossos
@@ -324,8 +345,8 @@
       </section>
 
       <section class="informations scroll-snap">
-        <div class="header">
-          <h3 class="title text-xxlarge" id="contact">FILIAIS</h3>
+        <div class="header" title="Filiais">
+          <h1 class="title text-xxlarge" id="contact">FILIAIS</h1>
           <br />
           <p class="text text-large">
             Fisicamente contamos com duas sedes próprias no estado do Rio Grande
@@ -335,12 +356,13 @@
           </p>
         </div>
         <div class="container">
-          <div class="address">
-            <h3 class="title">Natal/RN</h3>
+          <div class="address" title="endereço da filial Natal/RN">
+            <h1 class="title">Natal/RN</h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.188224670329!2d-35.22626518531638!3d-5.829066395776344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b25565117cac5d%3A0xbae8e5e91e226e57!2sR.%20Raimundo%20Chaves%2C%201584%20-%20Candel%C3%A1ria%2C%20Natal%20-%20RN%2C%2059064-368!5e0!3m2!1spt-BR!2sbr!4v1671400567963!5m2!1spt-BR!2sbr"
+              title="Localização da filial de Natal/RN"
               width="400"
-              height="300"
+              height="200"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -357,12 +379,13 @@
               >
             </div>
           </div>
-          <div class="address">
-            <h3 class="title">Nova Cruz/RN</h3>
+          <div class="address" title="endereço da filial Nova Cruz/RN">
+            <h1 class="title">Nova Cruz/RN</h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3100206095983!2d-35.43479105952357!3d-6.482364993334287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad8fca8ddec199%3A0x8dbe80cc5498ec76!2sR.%20Seis%20de%20Julho%2C%20238%2C%20Nova%20Cruz%20-%20RN%2C%2059215-000!5e0!3m2!1spt-BR!2sbr!4v1671401659688!5m2!1spt-BR!2sbr"
+              title="Localização da filial de Nova Cruz/RN"
               width="400"
-              height="300"
+              height="200"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -385,11 +408,13 @@
             href="https://www.instagram.com/benavidesefrancoadv/"
             target="_blank"
             class="link"
+            title="Redirecionamento para o instagram"
           >
             <i class="icon fa-brands fa-instagram fa-2x"></i>
           </a>
           <a
-            href="mailto:benavidesefrancoadvocacia@gmail.com?subject=Assunto&body=Conteúdo do email"
+            href="mailto:benavidesefrancoadvocacia@gmail.com?subject=Assunto&body=Conteúdo%20do%20E-mail"
+            title="redirecionamento para o e-mail"
             target="_blank"
             class="link"
           >
@@ -397,6 +422,7 @@
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=+55849460-3020&text=*Olá, gostaria de receber um atendimento jurídico.*"
+            title="Redirecionamento para o whatsapp"
             target="_blank"
             class="link"
           >
@@ -424,7 +450,6 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app')
     </script>
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/4c81be74b6.js"
       crossorigin="anonymous"

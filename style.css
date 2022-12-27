@@ -178,6 +178,11 @@ body::-webkit-scrollbar-thumb {
     width: 16rem;
 }
 
+.presentation .card .header h1{
+    width: 16rem;
+    text-align: center;
+}
+
 .presentation .card .title{
     color: var(--gold-200);
     text-shadow: var(--shadow-text-strong);
@@ -591,9 +596,12 @@ body::-webkit-scrollbar-thumb {
     text-shadow: var(--shadow-text-medium);
     color: var(--gold-200);
     align-self: center;
+    margin-bottom: 0.5rem;
 }
 
 .informations .address .subtitle{
+    margin-top: 0.8rem;
+
     color: var(--light);
     text-shadow: var(--shadow-text-medium);
     text-decoration: none;
