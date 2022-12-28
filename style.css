@@ -350,7 +350,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-between;
 
-    width: 100%;
+    min-width: 70vw;
 }
 
 .values .content img{
@@ -388,6 +388,7 @@ body::-webkit-scrollbar-thumb {
 
 .divider-shadow{
     height: 0.2rem;
+    min-width: 70vw;
     width: 100%;
 
     background-color: var(--gold-200);
@@ -404,6 +405,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: #dfd2a0;
+
+    padding: 25rem 0;
 }
 
 .areas-expertise .area{
@@ -411,7 +414,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
 
-    height: 110vh;
+    min-height: 110vh;
     max-width: 90vw;
 }
 
@@ -448,31 +451,27 @@ body::-webkit-scrollbar-thumb {
 
 .areas-expertise .acting{
     width: 100%;
-    margin-bottom: 50rem;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    gap: 1.5rem;
+    min-height: 100vh;
 }
 
-.areas-expertise .acting .row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.areas-expertise .acting .row .card{
+.areas-expertise .acting .card{
     height: 12rem;
     width: 14rem;
-
+    justify-self: center;
+    align-self: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    margin: 0.5rem 0;
-
 
     border: 0.313rem solid #d6c47c;
     box-shadow: var(--shadow-box-strong);
 }
 
-.areas-expertise .acting .row .card .bg{
+.areas-expertise .acting .card .bg{
     height: 100%;
     width: 100%;
 
@@ -482,11 +481,11 @@ body::-webkit-scrollbar-thumb {
     transition: 1.5s;
 }
 
-.areas-expertise .acting .row .card .bg:hover{
+.areas-expertise .acting .card .bg:hover{
     background-color: transparent;
 }
 
-.areas-expertise .acting .row .card span{
+.areas-expertise .acting .card span{
     color: var(--light);
 
     text-shadow: var(--shadow-text-medium);
@@ -673,14 +672,93 @@ body::-webkit-scrollbar-thumb {
  /*==========================================================*/
  /*================== RESPONSIVIDADE =======================*/
 
-  @media (max-width: 1000px)
+ @media (min-width: 1600px)
+ {
+     html {
+         font-size: 100%;
+     }
+
+    .presentation .card{
+        margin: 5rem 0;
+    }
+
+    .about{
+        padding: 25rem;
+    }
+
+    .management .card{
+        padding: 5rem 2rem;
+    }
+
+    .values{
+        padding: 0 40rem;
+    }
+
+    .areas-expertise .area{
+        min-height: 100vh;
+    }
+
+    .areas-expertise .acting{
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 2fr));
+        gap: 3rem;
+    }
+
+    .areas-expertise .acting .card{
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .areas-expertise .acting .card span{
+        font-size: var(--font-size-large);
+    }
+ }
+
+ @media (max-width: 1200px)
+ {
+     html {
+         font-size: 82.75%;
+     }
+ 
+     .areas-expertise .acting{
+         grid-template-columns: repeat(auto-fit, minmax(14rem, 2fr));
+         gap: 1.5rem;
+     }
+ 
+     .areas-expertise .acting .card{
+         height: 12rem;
+         width: 12rem;
+     }
+ 
+     .areas-expertise .acting .card span{
+         font-size: var(--font-size-medium);
+     }
+ }
+
+ @media (max-width: 960px)
 {
-    html {
-        font-size: 82.75%;
+    .team{        
+        min-height: 110vh;
+        padding: 1rem;
+    }
+
+    .team .message .text{
+        text-align: justify;
+    }
+
+    .informations .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        max-width: 75vw;
+        max-height: 20rem;
     }
 }
 
-@media (max-width: 600px)
+
+@media (max-width: 720px)
 {
     html {
         font-size: 55.75%;
@@ -714,23 +792,19 @@ body::-webkit-scrollbar-thumb {
         min-height: 100vh;
     }
 
-    .areas-expertise .acting .row:first-child{
-        position: relative;
-        top: -5rem;
+    .areas-expertise .acting{
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+        min-height: 100vh;
     }
 
-    .areas-expertise .acting .row:last-child{
-        position: relative;
-        top: 5rem;
+    .areas-expertise .acting .card{
+        height: 12rem;
+        width: 12rem;
     }
 
-    .areas-expertise .acting .row .card{
-        width: 10rem;
-        height: 10rem;
-    }
-
-    .areas-expertise .acting .row .card span{
-        font-size: var(--font-size-small);
+    .areas-expertise .acting .card span{
+        font-size: var(--font-size-medium);
     }
 
     .team{
